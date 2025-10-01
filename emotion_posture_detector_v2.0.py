@@ -208,7 +208,7 @@ def run_detection(cam_index):
         draw_filled_rectangle_with_outline(frame, (200, 120), (240, 160),
                                            box_color, outline_color=(0, 0, 0), outline_width=2)
 
-        cv2.imshow('Emotion + Posture Detector', frame)
+        cv2.imshow('Emotion + Posture Detector v2.0', frame)
 
         if cv2.waitKey(10) & 0xFF == ord('q'):
             break
@@ -225,7 +225,7 @@ def open_camera():
     run_detection(selected)
 
 root = tk.Tk()
-root.title("Emotion + Posture Detector")
+root.title("Emotion + Posture Detector v2.0")
 root.attributes('-topmost', True)
 root.update()
 root.attributes('-topmost', False)
@@ -245,4 +245,3 @@ btn = tk.Button(root, text="Mở Camera", command=open_camera)
 btn.pack(pady=10)
 
 root.mainloop()
-
