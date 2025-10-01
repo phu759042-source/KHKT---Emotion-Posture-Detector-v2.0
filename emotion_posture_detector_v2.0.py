@@ -245,3 +245,4 @@ btn = tk.Button(root, text="Mở Camera", command=open_camera)
 btn.pack(pady=10)
 
 root.mainloop()
+
